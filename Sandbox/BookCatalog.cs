@@ -26,7 +26,8 @@ namespace Sandbox
 
             foreach(KeyValuePair <string, Book > book in books)
             {
-                book.Value.GetAllInformation();
+               // book.Value.GetAllInformation();
+                Console.WriteLine($"Bogen er:{book.Value.GetAllInformation()}");
 
             }
 
@@ -40,6 +41,11 @@ namespace Sandbox
             // which has a matching ISBN number. The variable matchingBook
             // should be set to this book
             // Hint: You can use isbn to lookup the book in the Dictionar
+
+            if (books.ContainsKey(isbn))
+            {
+                matchingBook = books[isbn];
+            }
 
             return matchingBook;
         }

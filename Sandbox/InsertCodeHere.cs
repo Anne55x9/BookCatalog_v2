@@ -12,6 +12,7 @@ namespace Sandbox
             Book b2 = new Book("XS3220", "Gardening", "Alex Sohn", 220);
             Book b3 = new Book("DD0095", "Cars in the USA", "Susan Dreyer", 528);
             Book b4 = new Book("PT1295", "Copenhagen Dawn", "Dan Mygind", 104);
+            
 
             BookCatalog theCatalog = new BookCatalog();
             theCatalog.AddBook(b1);
