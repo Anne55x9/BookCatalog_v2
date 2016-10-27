@@ -16,13 +16,20 @@ namespace Sandbox
 
         public void AddBook(Book aBook)
         {
-            // Add code that can add the given Book object to the list
+            books.Add(aBook.GetISBN(), aBook);
         }
 
         public void PrintAllBooks()
         {
             // Add code that can print all books in the list
             // Hint: You will need a repetition statement
+
+            foreach(KeyValuePair <string, Book > book in books)
+            {
+                book.Value.GetAllInformation();
+
+            }
+
         }
 
         public Book LookupBook(string isbn)
